@@ -4,3 +4,41 @@ artifacts/
 build/
 # Aiken's default documentation export
 docs/
+
+
+# dependencies
+offchain/node_modules
+offchain/.pnp
+.pnp.js
+
+# testing
+offchain/coverage
+
+# next.js
+offchain/.next/
+offchain/out/
+
+# production
+offchain/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+.env
+
+.vscode
