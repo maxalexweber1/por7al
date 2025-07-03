@@ -1,8 +1,6 @@
 use aiken/crypto.{VerificationKeyHash}
-// never unlock 
 use cardano/transaction.{OutputReference, Transaction}
 
-// 🔧 Eigener Datum-Typ
 pub type LockDatum {
   owner: VerificationKeyHash,
 }
