@@ -1,0 +1,201 @@
+{
+  "preamble": {
+    "title": "maxalexweber1/por7al",
+    "description": "Aiken contracts for project 'maxalexweber1/por7al'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.17+c3a7fba"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "everlock.nft_forever_lock.spend",
+      "datum": {
+        "title": "_datum_lock",
+        "schema": {
+          "$ref": "#/definitions/everlock~1LockDatum"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/everlock~1LockRedeemer"
+        }
+      },
+      "compiledCode": "588501010029800aba2aba1aab9faab9eaab9dab9a48888896600264653001300700198039804000cc01c0092225980099b8748008c01cdd500144c8cc896600266e1d2000300a375400d13232598009808001452845900e1bae300e001300b375400d16402460160026016601800260106ea800a2c8030600e00260066ea801e29344d9590011",
+      "hash": "76017c36999e0567dcb3b85d715b17df516a67c7638f1d94042f4487"
+    },
+    {
+      "title": "everlock.nft_forever_lock.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "588501010029800aba2aba1aab9faab9eaab9dab9a48888896600264653001300700198039804000cc01c0092225980099b8748008c01cdd500144c8cc896600266e1d2000300a375400d13232598009808001452845900e1bae300e001300b375400d16402460160026016601800260106ea800a2c8030600e00260066ea801e29344d9590011",
+      "hash": "76017c36999e0567dcb3b85d715b17df516a67c7638f1d94042f4487"
+    },
+    {
+      "title": "pwlock.nft_hashlock.spend",
+      "datum": {
+        "title": "datum_lock",
+        "schema": {
+          "$ref": "#/definitions/pwlock~1PwLock_Datum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/pwlock~1Redeemer"
+        }
+      },
+      "compiledCode": "58d401010029800aba2aba1aab9faab9eaab9dab9a488888966002646464b30013370e900118029baa00189919912cc004cdc3a400060106ea8006264b30013232330010013758601c601e601e601e601e601e601e601e601e60186ea8c038024896600200314a115980099b8f375c601e00200714a31330020023010001402c8070dd71806180698051baa001899b8f37246eb8c030018dd7180618051baa0018a504020601660126ea80062c8038c024004c024c028004c018dd5000c5900418039804000980380098019baa0078a4d13656400401",
+      "hash": "1415539986ccd1f49848de8585a7db57992541e1cf613a65b861827e"
+    },
+    {
+      "title": "pwlock.nft_hashlock.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58d401010029800aba2aba1aab9faab9eaab9dab9a488888966002646464b30013370e900118029baa00189919912cc004cdc3a400060106ea8006264b30013232330010013758601c601e601e601e601e601e601e601e601e60186ea8c038024896600200314a115980099b8f375c601e00200714a31330020023010001402c8070dd71806180698051baa001899b8f37246eb8c030018dd7180618051baa0018a504020601660126ea80062c8038c024004c024c028004c018dd5000c5900418039804000980380098019baa0078a4d13656400401",
+      "hash": "1415539986ccd1f49848de8585a7db57992541e1cf613a65b861827e"
+    },
+    {
+      "title": "testmint.mint_test_nft.mint",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "585401010029800aba2aba1aab9eaab9dab9a4888896600264653001300600198031803800cc0180092225980099b8748000c01cdd500144c9289bae30093008375400516401830060013003375400d149a26cac8009",
+      "hash": "def68337867cb4f1f95b6b811fedbfcdd7780d10a95cc072077088ea"
+    },
+    {
+      "title": "testmint.mint_test_nft.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "585401010029800aba2aba1aab9eaab9dab9a4888896600264653001300600198031803800cc0180092225980099b8748000c01cdd500144c9289bae30093008375400516401830060013003375400d149a26cac8009",
+      "hash": "def68337867cb4f1f95b6b811fedbfcdd7780d10a95cc072077088ea"
+    },
+    {
+      "title": "timelock.nft_timelock.spend",
+      "datum": {
+        "title": "datum_lock",
+        "schema": {
+          "$ref": "#/definitions/timelock~1TimeLock_Datum"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "59016201010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cdc3a400530080024888966002600460106ea800e2646644b30013370e900018059baa0018992cc004c8c8cc004004dd618091809980998099809980998099809980998079baa0072259800800c528456600266e3cdd71809800801c528c4cc008008c05000500e2022375c60206022601a6ea800626464646644b3001300b30113754005159800980598089baa30153016003899b88001375a602a60246ea800a266e24004dd6980a98091baa002404114a08080c04c004dd6980998081baa004330113012001330119800980418071baa30123013001a6103d87a8000a60103d8798000403497ae0300e37546022601c6ea8004c040c044c044c044c044c044c044c044c034dd5002c5282016300f300c3754003164028601a002601a601c00260126ea800e2c8038601000260066ea802229344d95900101",
+      "hash": "a852e4bba4d6fb8e17040ce252bd02ea770f9350f65bbaaee2fdec89"
+    },
+    {
+      "title": "timelock.nft_timelock.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "59016201010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cdc3a400530080024888966002600460106ea800e2646644b30013370e900018059baa0018992cc004c8c8cc004004dd618091809980998099809980998099809980998079baa0072259800800c528456600266e3cdd71809800801c528c4cc008008c05000500e2022375c60206022601a6ea800626464646644b3001300b30113754005159800980598089baa30153016003899b88001375a602a60246ea800a266e24004dd6980a98091baa002404114a08080c04c004dd6980998081baa004330113012001330119800980418071baa30123013001a6103d87a8000a60103d8798000403497ae0300e37546022601c6ea8004c040c044c044c044c044c044c044c044c034dd5002c5282016300f300c3754003164028601a002601a601c00260126ea800e2c8038601000260066ea802229344d95900101",
+      "hash": "a852e4bba4d6fb8e17040ce252bd02ea770f9350f65bbaaee2fdec89"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "aiken/crypto/VerificationKeyHash": {
+      "title": "VerificationKeyHash",
+      "dataType": "bytes"
+    },
+    "everlock/LockDatum": {
+      "title": "LockDatum",
+      "anyOf": [
+        {
+          "title": "LockDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "owner",
+              "$ref": "#/definitions/aiken~1crypto~1VerificationKeyHash"
+            }
+          ]
+        }
+      ]
+    },
+    "everlock/LockRedeemer": {
+      "title": "LockRedeemer",
+      "anyOf": [
+        {
+          "title": "LockRedeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "msg",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "pwlock/PwLock_Datum": {
+      "title": "PwLock_Datum",
+      "anyOf": [
+        {
+          "title": "PwLock_Datum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "unlock_hash",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "owner",
+              "$ref": "#/definitions/aiken~1crypto~1VerificationKeyHash"
+            }
+          ]
+        }
+      ]
+    },
+    "pwlock/Redeemer": {
+      "title": "Redeemer",
+      "dataType": "bytes"
+    },
+    "timelock/TimeLock_Datum": {
+      "title": "TimeLock_Datum",
+      "anyOf": [
+        {
+          "title": "TimeLock_Datum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "timelock",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "owner",
+              "$ref": "#/definitions/aiken~1crypto~1VerificationKeyHash"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
