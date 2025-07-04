@@ -34,8 +34,8 @@ const Script = {
 };
 
 
-const policyId = "def68337867cb4f1f95b6b811fedbfcdd7780d10a95cc072077088ea"; // change to org. policy from nfts to lock
-const assetNameHex = "303550524f50484537"; // "05PROPHE7" in Hex -> just for testing, need to do this dynamicly 
+const policyId = "359f7528061497ac217e556706220adbe1755f14642523ce7150dcbe"; // PROPE7S
+const assetNameHex = "303150524f50484537"; // 01PROPE7
 const assetId = policyId + assetNameHex
 
 // 4 ever lock validator
@@ -61,10 +61,10 @@ export default function Dashboard(props: {
     const { lucid, onError } = props;
 
     const [isLockModalOpen, setIsLockModalOpen] = useState(false);
-    const [owneraddress, setOwneraddress] = useState("addr1q87xjyd3jdgctjdcs2g22ra7xqqqm4pyc6360tdz3rwmfk5gh9m099xmfh32rem329n8d5js7h4kzedn082hhc482uhs528aqy");
-    const [assetPolicyId, setAssetPolicyId] = useState("263eb3e3c980c15305f393dc7a2f6289ba12732b6636efe46d6e2c16")
-    const [assetName, setAssetName] = useState("545453547572746c6531303037")
-    const [note, setNode] = useState("")
+    const [owneraddress, setOwneraddress] = useState("addr1qyfqzuyzjv7cpwt02sx6l5wc8w7krym8306m8r8yx45uvhvvcyar2x94c4z5dwec8zxag65ujll2axu7s57lgdlw9hdqu2kmkf");
+    const [assetPolicyId, setAssetPolicyId] = useState("359f7528061497ac217e556706220adbe1755f14642523ce7150dcbe")
+    const [assetName, setAssetName] = useState("303150524f50484537")
+    const [note, setNode] = useState("NOT LOST — CHOSEN")
 
     // submit tx function
     async function submitTx(tx: TxSignBuilder) {

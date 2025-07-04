@@ -34,10 +34,15 @@ everlock.ak
 
 -> this validator will never be spendable because we test if  #[7] equals #[0] in the query. So all NFTs locked on this paymentkey can never been spend.
 
-Example TA: Locking Preview Network:
+Example TA: Locking on Lace Paperwallet Address on Mainnet
 
-https://preview.cardanoscan.io/transaction/4cec0463e34e3cfb90c0cfe770c0678987534435cd166bd0f73d7fbc041709c7
+https://cardanoscan.io/transaction/1b16696772ea1f714b997e6d0a28b255e27a311870dfb27554f8612312026a24
 
 The NFT is now locked for ever on this special generated lock adress but still in a utxo inside the general user wallet.
 
-![alt text](image.png)
+
+https://pool.pm/addr1qyfqzuyzjv7cpwt02sx6l5wc8w7krym8306m8r8yx45uvhvvcyar2x94c4z5dwec8zxag65ujll2axu7s57lgdlw9hdqu2kmkf
+
+https://www.jpg.store/asset/359f7528061497ac217e556706220adbe1755f14642523ce7150dcbe303150524f50484537
+
+
