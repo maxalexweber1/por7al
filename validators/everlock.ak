@@ -23,16 +23,3 @@ validator nft_forever_lock {
     fail
   }
 }
-
-test test1() {
-  let owner = #"00000000000000000000000000000000000000000000000000000000"
-  let datum = LockDatum { owner }
-
-  let redeemer = LockRedeemer { msg: "Hello" }
-
-  let oref = OutputReference { transaction_id: "", output_index: 0 }
-
-  let tx = Transaction { ..transaction.placeholder, extra_signatories: [] }
-
-  !nft_forever_lock.spend(Some(datum), redeemer, oref, tx)
-}

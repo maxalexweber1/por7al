@@ -33,8 +33,8 @@ export default function Home() {
         }
 
         Lucid(
-            new Blockfrost("https://cardano-preview.blockfrost.io/api/v0", blockfrostApiKey),
-            "Preprod"
+            new Blockfrost("https://cardano-mainnet.blockfrost.io/api/v0", blockfrostApiKey),
+            "Mainnet"
         )
             .then(setLucid)
             .catch((err) => {
