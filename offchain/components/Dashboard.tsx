@@ -78,6 +78,9 @@ export default function Dashboard(props: {
         network: Network
     ) {
         const addressDetails = getAddressDetails(address);
+
+        console.log(addressDetails)
+
         const stakeCred = addressDetails.stakeCredential;
         if (!stakeCred) throw new Error("Stake credential not found");
         return validatorToAddress(network, validator, stakeCred);
